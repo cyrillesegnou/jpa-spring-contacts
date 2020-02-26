@@ -19,7 +19,7 @@ import fr.gtm.contacts.entities.Civilite;
 import fr.gtm.contacts.entities.Contact;
 import fr.gtm.contacts.repo.ContactRepository;
 
-@SpringBootTest
+@SpringBootTest//lance à la fois le run du main, le serveur et les tests... 
 
 //@ExtendWith(SpringExtension.class)
 //@DataJpaTest
@@ -42,8 +42,8 @@ class SpringBootJpaContactApplicationTests {
 		Contact c = new Contact(Civilite.Pr, "Arthue", "Lerois", 55) ; 
 		
 		repo.save(c);
-		List<Contact> contacts = repo.findAll();
-			assertTrue(contacts.contains(c));
+		//List<Contact> contacts = repo.findAll();
+		//	assertTrue(contacts.contains(c));
 		assertNotNull(c); 
 	
 			}
@@ -57,7 +57,7 @@ class SpringBootJpaContactApplicationTests {
 //	public void testDeleteContact() {
 //		Contact c = new Contact(Civilite.Pr, "Arth", "Leris", 85) ; 
 //		repo.save(c);
-//		repo.deleteById(c.getId());
+//		repo.deleteById(,21.getId());
 //	}
 	
 

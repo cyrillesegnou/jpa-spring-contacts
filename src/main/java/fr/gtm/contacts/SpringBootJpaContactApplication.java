@@ -31,6 +31,8 @@ public class SpringBootJpaContactApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Oui cela fonctionne !!!<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<");
 		
+	
+		
 //			List<Contact> contacts = repo.findAll() ;
 //			
 //			for (Contact c : contacts)
@@ -63,7 +65,7 @@ public class SpringBootJpaContactApplication implements CommandLineRunner{
 //		{
 //			System.out.println(c);
 //		}
-		//		List<Contact> c4 = repo.findByCivilite(Civilite.M) ;
+//		List<Contact> c4 = repo.findByCivilite(Civilite.M) ;
 //		for (Contact c : c4) {
 //		System.out.println(c);
 //		}
@@ -79,18 +81,21 @@ public class SpringBootJpaContactApplication implements CommandLineRunner{
 //		
 //		List<Contact> c9 = repo.findByVille("Alençon") ;
 //		c9.forEach(System.out::println);
-		
+//		
 //		Pageable page = PageRequest.of(0, 77, Sort.sort(Contact.class).by(Contact::getCivilite).ascending());
-//		c8 = repo.findByCivilite(Civilite.M, page) ;
+//		c8 = repo.findByCivilite(Civilite.M) ;
 //		c8.forEach(System.out::println);	
+//		
 //		List<Contact> c11 = repo.findByAge(25) ;
 //		c11.forEach(System.out::println);
 //		Contact c10 = new Contact(); 
 //		c10.setNom("Gaston");
 //		Example<Contact> exc = Example.of(c10);
 //		System.out.println(repo.count(exc));
-//		List<Contact> c11 = repo.findAll(exc) ;
-//		c11.forEach(System.out::println);
+//		
+//		List<Contact> c12 = repo.findAll(exc) ;
+//		c12.forEach(System.out::println);
+//		
 //		List<Contact> c6 = repo.findByAdressesCodePostal("14689") ;
 //		if (c6.isEmpty()) {
 //			System.out.println("pas de contact à ce CP ");
@@ -103,7 +108,7 @@ public class SpringBootJpaContactApplication implements CommandLineRunner{
 //			}
 //		}
 //		
-//	//	List <Contact> c7 = repo.findByAdresseVille("Lens") ;
+//		List <Contact> c7 = repo.findByVille("Lens") ;
 		
 		
 		}

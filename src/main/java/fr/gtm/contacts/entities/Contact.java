@@ -62,4 +62,10 @@ public class Contact implements Serializable {
 		this.prenom = prenom;
 		this.age = age ;
 	}	
+	public Contact(Civilite civilite, String nom, String prenom) {
+		this.civilite = civilite;
+		this.nom = nom;
+		this.prenom = prenom;
+		
+	}	
 }
